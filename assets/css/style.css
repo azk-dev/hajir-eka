@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+@font-face {
+    font-family: "Modernline";
+    src: url("../fonts/modernline/modernline.otf") format("opentype");
+}
+@font-face {
+    font-family: "Gallery Modern";
+    src: url("../fonts/gallerymodern/GalleryModern.otf") format("opentype");
+}
+
+* { font-family: "Roboto", sans-serif; box-sizing: border-box; margin: 0; padding: 0; }
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    outline: none;
+}
+button, .btn {
+    display: inline-block;
+    border: 0;
+    padding: 12px 24px;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button i, .btn i { margin-right: 4px; }
+label { display: block; }
+:focus { outline: none; }
+hr { margin: 0px 40px; }
+input { 
+    width: 100%; 
+    padding: 10px 8px;
+    border: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+textarea { 
+    width: 100%; 
+    padding: 10px 8px;
+    border: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+select { 
+    width: 100%; 
+    padding: 10px 8px;
+    border: 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.abhaya-libre { font-family: "Abhaya Libre"; }
+.cormorant { font-family: "Cormorant"; }
+.gallery-modern { font-family: "Gallery Modern"; }
+.modernline { font-family: "Modernline"; }
+.quicksand { font-family: "Quicksand"; }
+.marsha { font-family: "Marsha"; }
+
+.font-weight-500 { font-weight: 500; }
+.font-weight-600 { font-weight: 600; }
+.font-weight-700 { font-weight: 700; }
+.font-weight-800 { font-weight: 800; }
+.font-weight-900 { font-weight: 900; }
+.space-50 { width: 100%; height: 50px; }
+.space-30 { width: 100%; height: 30px; }
+
+.btn-music {
+    padding: 5px 7px;
+    border-radius: 40px;
+    position: fixed;
+    background-color: #323232;
+    color: #fff;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.play, .stop { display: none; }
+
+.opening {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/opening.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 60%;
+    position: fixed;
+    text-align: center;
+}
+#bride-name {
+    width: 100%;
+    font-size: 67px;
+    margin-top: 60vh;
+    margin-bottom: 20px;
+}
+#span-invited {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+}
+#invited-person {
+    font-size: 16px;
+    margin-top: 4px;
+}
+.btn-open-invitation {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #000;
+}
+.apology-text {
+    width: 100%;
+    position: absolute;
+    font-size: 12px;
+}
+
+.main {
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url('../images/1462.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 35%;
+    text-align: center;
+    padding-top: 20vh;
+}
+.container p { font-size: 62px; }
+.container p:first-child { font-size: 30px; }
+
+.quran {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture-top-right {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    width: 40%;
+    height: 40%;
+    background-position: center;
+    background-image: url('../images/1472.jpg');
+    z-index: -50;
+    border-bottom-left-radius: 10px;
+}
+.picture-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    width: 40%;
+    height: 40%;
+    background-image: url('../images/1467.jpg');
+    background-position: center;
+    z-index: -50;
+    border-top-right-radius: 10px;
+}
+.surah {
+    width: 65%;
+    margin: 30px 20px;
+    padding: 60px 20px;
+    text-align: center; 
+    font-size: 18px;
+    
+    border-radius: 5px; 
+    backdrop-filter: blur(14px); 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.surah img {
+    width: 120px;
+}
+.surah p {
+    margin: auto;
+    max-width: 1120px;
+}
+.surah p:last-child { 
+    margin-top: 10px; 
+    font-size: 22px;
+}
+
+.couple { 
+    margin: auto;
+    text-align: center; 
+    max-width: 1220px;
+}
+.couple p:first-child { font-size: 28px; }
+.couple p:nth-child(2) { font-size: 12px; }
+.couple p:nth-child(3) { margin: 10px 0px; }
+.couple img {
+    border-radius: 12px;
+    max-width: 360px;
+    position: relative;
+}
+.couple .description {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.couple .description div {
+    flex: 1 0 50%;
+    text-align: center;
+}
+.couple .btn-instagram {
+    display: flex;
+    justify-content: space-around;
+}
+.couple a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 13px;
+    border-radius: 40px;
+    color: #354259;
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
+
+.galleries {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.gallery-track {
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 9)); }
+}
+
+.gallery {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px 2px;
+}
+
+img { 
+    flex-shrink: 0;
+    width: 100%; 
+}
+
+.galleries::after, .galleries::before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.galleries::before {
+    left: 0;
+    top: 0;
+}
+
+.galleries::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.event {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.event #timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.event .card-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    width: 80px;
+    height: 80px;
+    color: #323232;
+    border-radius: 20px;
+}
+.event img {
+    width: 200px;
+    margin-bottom: 40px;
+}
+.marriage-contract { margin-bottom: 40px; }
+.event .header {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.event .place {
+    margin-top: 15px;
+}
+.event a {
+    margin-top: 10px;
+    background-color: #323232;
+    border-radius: 10px;
+    color: #F7F7F7;
+}
+
+.wedding-gift {
+    margin: auto;
+    max-width: 1120px;
+    text-align: center;
+    padding: 60px 20px;
+}
+.wedding-gift .icon i {
+    font-size: 34px;
+}
+.wedding-gift img {width: 175px;
+    width: 150px;
+}
+.wedding-gift p:first-child {
+    font-size: 56px;
+}
+.wedding-gift p:nth-child(2) {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.wedding-gift .account-number {
+    margin-top: 24px;
+}
+.wedding-gift button {
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.wedding-gift button:hover {
+    color: #F7F7F7;
+    background-color: #323232;
+}
+
+.comments {
+    padding: 10px;
+    background-attachment: fixed;
+    background-image: url('../images/bg-comments.jpg');
+    background-size: cover;
+    background-position: center 40%;
+}
+.comments .prayer { 
+    font-size: 26px; 
+    text-align: center;
+}
+#form-comment {
+    padding-top: 20px;
+    margin: auto;
+    max-width: 1120px;
+    font-size: 12px;
+}
+#form-comment div { margin-bottom: 12px; }
+#form-comment div label { margin-bottom: 4px; }
+#form-comment button {
+    border-radius: 10px;
+    background-color: #323232;
+    color: #F7F7F7;
+}
+#form-comment button:hover {
+    color: #323232;
+    background-color: #F7F7F7;
+}
+.list-comments {
+    padding-right: 20px;
+    max-width: 1120px;
+    margin: auto;
+    height: 400px;
+    overflow: scroll;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(3px); 
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.list-comments::-webkit-scrollbar {
+    display: none;
+}
+.comment {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 10px;
+}
+.comment-card {
+    border-radius: 6px;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #fff;
+}
+.comment .comment-card .header {
+    margin-bottom: 8px;
+    display: flex;
+}
+.comment .comment-card .header .badge-state {
+    margin-left: 8px; 
+    padding: 4px 8px;
+    background-color: #323232;
+    font-size: 10px;
+    color: #F7F7F7;
+    border-radius: 4px;
+}
+
+.gratitude {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.gratitude .thank-you { font-size: 36px; }
+.gratitude .bride-name { font-size: 46px; }
+
+@media only screen and (max-width: 768px) {
+    .opening { background-position: center; }
+    #bride-name { font-size: 50px; }
+
+    .container { 
+        text-align: center;
+        background-position: center;
+    }
+    .container p { font-size: 36px; }
+    .container p:first-child { font-size: 18px; }
+
+    .picture-top-right, .picture-bottom-left { width: 85%; }
+    .surah { width: 100%; }
+
+    .couple .description {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap-reverse;
+    }
+    .couple img { width: 95%; }
+
+    .wedding-gift { padding: 40px 20px; }
+    .wedding-gift p:first-child { font-size: 36px; }
+    .wedding-gift p:nth-child(2) { font-size: 18px; }
+
+    #form-comment { padding: 0px; }
+    #form-comment span {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gratitude { height: 300px; }
+    .gratitude .thank-you { font-size: 18px; }
+    .gratitude .bride-name { font-size: 36px; }
+}
