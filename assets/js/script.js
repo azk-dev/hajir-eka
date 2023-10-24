@@ -66,7 +66,15 @@ if( btnCopyText ) {
         $temp.val(this.dataset.account).select();
         document.execCommand("copy");
         $temp.remove();
+
+        toast()
     } )
+}
+
+function toast() {
+  var x = document.getElementById("toast");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
 function getComments() {
