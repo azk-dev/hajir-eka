@@ -174,7 +174,7 @@ select {
 .surah {
     width: 65%;
     margin: 30px 20px;
-    padding: 60px 20px;
+    padding: 20px 10px;
     text-align: center; 
     font-size: 18px;
     
@@ -183,7 +183,8 @@ select {
     background-color: rgba(255, 255, 255, 0.2);
 }
 .surah img {
-    width: 120px;
+    width: 80px;
+    margin-bottom: 10px;
 }
 .surah p {
     margin: auto;
@@ -191,7 +192,7 @@ select {
 }
 .surah p:last-child { 
     margin-top: 10px; 
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .couple { 
@@ -313,10 +314,27 @@ img {
     width: 200px;
     margin-bottom: 40px;
 }
-.marriage-contract { margin-bottom: 40px; }
+.marriage-contract { margin-bottom: 60px; }
+.marriage-contract .date, .wedding-reception .date {
+    margin: -10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.marriage-contract .time, .wedding-reception .time {
+    font-size: 20px;
+}
+.date p:first-child {
+    font-size: 56px;
+}
+.date p:last-child {
+    width: 55px;
+    text-align: left;
+}
 .event .header {
     font-size: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .event .place {
     margin-top: 15px;
