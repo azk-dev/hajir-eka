@@ -132,7 +132,7 @@ select {
     background-repeat: no-repeat;
     background-position: center 35%;
     text-align: center;
-    padding-top: 16vh;
+    padding-top: 20vh;
 }
 .container p { font-size: 62px; }
 .container p:first-child { font-size: 30px; }
@@ -244,7 +244,7 @@ select {
 .gallery-track {
     display: flex;
     width: calc(250px * 18);
-    animation: scroll 120s linear infinite;
+    animation: scroll 40s linear infinite;
 }
 
 @keyframes scroll {
@@ -263,7 +263,7 @@ select {
     margin: 0px 2px;
 }
 
-img { 
+.gallery img { 
     flex-shrink: 0;
     width: 100%; 
 }
@@ -355,13 +355,19 @@ img {
 .wedding-gift .icon i {
     font-size: 34px;
 }
-.wedding-gift img {width: 175px;
+.wedding-gift .header-box {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+}
+.wedding-gift img {
     width: 150px;
 }
-.wedding-gift p:first-child {
+.wedding-gift .header {
     font-size: 56px;
 }
-.wedding-gift p:nth-child(2) {
+.wedding-gift .prayer {
     margin-top: 10px;
     font-size: 20px;
 }
@@ -375,6 +381,9 @@ img {
 .wedding-gift button:hover {
     color: #F7F7F7;
     background-color: #323232;
+}
+.wedding-gift .gift-icon {
+    width: 90px;
 }
 
 .comments {
@@ -485,8 +494,9 @@ img {
     .couple img { width: 95%; }
 
     .wedding-gift { padding: 40px 20px; }
-    .wedding-gift p:first-child { font-size: 36px; }
-    .wedding-gift p:nth-child(2) { font-size: 18px; }
+    .wedding-gift .header { font-size: 36px; }
+    .wedding-gift .prayer { font-size: 18px; }
+    .wedding-gift .gift-icon { width: 60px; }
 
     #form-comment { padding: 0px; }
     #form-comment span {
