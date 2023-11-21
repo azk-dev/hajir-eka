@@ -116,7 +116,7 @@ function countdownTimer() {
   const hoursElement = $('#hours');
   const minutesElement = $('#minutes');
   const secondsElement = $('#seconds');
-  const countdownDate = new Date('Oct 29, 2023 10:00:00').getTime();
+  const countdownDate = new Date('Nov 26, 2023 10:00:00').getTime();
 
   const x = setInterval(function() {
       let now = new Date().getTime();
