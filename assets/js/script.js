@@ -85,7 +85,6 @@ function getComments() {
       .then( (snapshot) => {
           if( snapshot.exists() ) {
               const datas = snapshot.val();
-              console.log( datas )
               for (const data in datas) {
                   if (Object.hasOwnProperty.call(datas, data)) {
                       const element = datas[data];
@@ -118,6 +117,7 @@ function countdownTimer() {
   const secondsElement = $('#seconds');
   const countdownDate = new Date('Nov 26, 2023 10:00:00').getTime();
 
+  console.log( countdownDate )
   const x = setInterval(function() {
       let now = new Date().getTime();
       let distance = countdownDate - now;
